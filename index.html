@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Pursuit of Happyness</title>
 
     <style>
@@ -23,12 +24,12 @@
         }
 
         .logo {
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    width: 200px; /* scaled down from 400px */
-    height: auto;
-}
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 200px;
+            height: auto;
+        }
 
         .game-screen {
             max-width: 900px;
@@ -89,11 +90,29 @@
             font-size: 8px;
             color: #888;
         }
+
+        /* ✅ MOBILE FIX */
+        @media (max-width: 600px) {
+
+            .logo {
+                position: static;
+                display: block;
+                margin: 10px auto 20px auto;
+                width: 150px;
+            }
+
+            .wrapper {
+                padding-top: 10px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
+
 <img src="collegelogo.jpg" class="logo" alt="College Logo">
+
 <div class="wrapper">
 
     <!-- GAME SCREEN IMAGE -->
@@ -115,10 +134,15 @@
         </p>
 
         <a href="https://drive.google.com/uc?export=download&id=10cAl4unpeqiMOOonTlqNL4k3VNn_-skL" 
-   class="btn" 
-   download>
-    DOWNLOAD GAME
-</a>
+           class="btn" 
+           download>
+            DOWNLOAD GAME
+        </a>
+
+        <!-- ✅ Added important note -->
+        <p style="font-size:8px; color:#888; margin-top:10px;">
+            Requires Java (JRE 8+) to run
+        </p>
 
         <div class="footer-text">
             Developed by Shiven Vasan, Unnati Bansal, Hrishita and Ananyaa.
@@ -129,6 +153,3 @@
 
 </body>
 </html>
-
-
-    
