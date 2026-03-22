@@ -12,78 +12,113 @@
 
         body {
             margin: 0;
-            padding: 0;
-            background-color: #0f0f0f;
-            color: #ffffff;
+            background: #000;
+            color: white;
             font-family: 'PressStart', monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             text-align: center;
         }
 
-        .container {
-            max-width: 800px;
-            padding: 40px;
-            border: 4px solid #ffffff;
-            box-shadow: 0 0 20px #ffffff33;
+        .wrapper {
+            padding: 40px 20px;
+        }
+
+        .game-screen {
+            max-width: 900px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .game-screen img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #ffffff22;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            border: 3px solid #FFD700;
+            border-radius: 20px;
+            background: #111;
         }
 
         h1 {
-            font-size: 20px;
-            margin-bottom: 20px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #FFD700;
         }
 
         h2 {
             font-size: 14px;
-            margin-bottom: 30px;
-            color: #bbbbbb;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 10px;
             line-height: 1.8;
-            margin-bottom: 40px;
+            color: #ccc;
+            margin-bottom: 30px;
         }
 
         .btn {
             display: inline-block;
             padding: 15px 25px;
             font-size: 10px;
-            color: #000;
-            background-color: #65E096;
-            border: none;
             text-decoration: none;
+            background: #FFD700;
+            color: black;
             transition: 0.2s;
         }
 
         .btn:hover {
-            background-color: #5CD5E2;
+            background: #fff;
             transform: scale(1.05);
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 8px;
+            color: #888;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>IN PURSUIT OF HAPPYNESS</h1>
-    <h2>खुशी की खोज में</h2>
+<div class="wrapper">
 
-    <p>
-        Step into the village of Tenali Rama and take on the role of the legendary
-        thinker himself. A child in the village is believed to be suffering from
-        deep sadness, and it's up to you to uncover the truth.
-        <br><br>
-        Use wit, observation, and wisdom to navigate through conversations,
-        choices, and hidden meanings. Not everything is what it seems.
-    </p>
+    <!-- GAME SCREEN IMAGE -->
+    <div class="game-screen">
+        <img src="game-preview.png" alt="Game Preview">
+    </div>
 
-    <a href="https://drive.google.com/file/d/10cAl4unpeqiMOOonTlqNL4k3VNn_-skL/view?usp=share_link" class="btn" target="_blank">
-        DOWNLOAD GAME
-    </a>
+    <!-- MAIN CARD -->
+    <div class="card">
+        <h1>खुशी की खोज में</h1>
+        <h2>IN THE PURSUIT OF HAPPYNESS</h2>
+
+        <p>
+            Step into the village of Tenali Rama and become the mind behind wisdom.
+            A child is believed to be suffering from deep sadness, and it is your
+            role to uncover the truth through observation, dialogue, and intellect.
+            <br><br>
+            Every choice matters. Every word holds meaning.
+        </p>
+
+        <a href="https://drive.google.com/file/d/10cAl4unpeqiMOOonTlqNL4k3VNn_-skL/view?usp=share_link" class="btn" target="_blank" target="_blank" class="btn">
+            DOWNLOAD GAME
+        </a>
+
+        <div class="footer-text">
+            Developed by Shiven Vasan, Unnati Bansal, Hrishita and Ananyaa.
+        </div>
+    </div>
+
 </div>
 
 </body>
 </html>
+
+
+    
